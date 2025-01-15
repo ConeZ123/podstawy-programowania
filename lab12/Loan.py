@@ -4,7 +4,7 @@ class Loan:
     def __init__(self, loan_ammount: float, interest_rate: float, months: int):
         self.loan_ammount = loan_ammount
         self.interest_rate = interest_rate
-        self.month = months
+        self.months = months
         self.total_ammount = loan_ammount * (1 + interest_rate / 100) 
         self.balance = Balance(self.total_ammount)
 
